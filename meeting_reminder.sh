@@ -6,8 +6,6 @@ meeting_info=$(zenity --forms \
     --add-entry 'Emails' \
     2>/dev/null)
 
-echo $meeting_info
-
 if [[ -n "$meeting_info" ]]; then
     python3 send_reminders.py "$meeting_info"
 fi
