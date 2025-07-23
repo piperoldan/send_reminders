@@ -1,6 +1,9 @@
 Created this repo to learn to debug.
 
-Still not working as expected. 
+In a separate window run the following and leave it open:
+/usr/bin/python3 -m smtpd -n -c DebuggingServer localhost:8025
+This is our fake server, and its going to receive the fake
+emails sent by our script. 
 
 The file send_reminders_beforemail.py works without the need of the .sh however the idea is that
 send_reminders and meeting_reminder.sh should work together.
