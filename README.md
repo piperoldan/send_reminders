@@ -10,6 +10,7 @@ You don't need to setup email server for this to work. It has embedded a fake ma
 
 For the fake email server, in a separate command prompt window run the following and leave it open:<br>
 >>/usr/bin/python3 -m smtpd -n -c DebuggingServer localhost:8025<br>
+
 **Do not close while practicing. It is going to look like doing nothing but don't be fooled, its doing its job. At the end, it will show the emails sent if successful.**<br>
 
 Before making any changes run: git checkout -b practice
